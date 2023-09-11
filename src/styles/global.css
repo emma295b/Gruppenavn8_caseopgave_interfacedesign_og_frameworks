@@ -1,0 +1,47 @@
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--size-3)
+}
+
+/*Typografi */
+h1, h2, h3, p{
+    font-family: var(--manrope);
+}
+h1{
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-9);
+    line-height: var(--font-lineheight-1);
+    padding: var(--size-7) 0;
+    color: #0D1C38;
+}
+
+h2{
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-7);
+    line-height: var(--font-lineheight-1);
+    padding: var(--size-5) 0;
+    color: #2d2d2d;
+}
+
+h3{
+    font-size: var(--font-size-fluid-3);
+    font-weight: var(--font-weight-6);
+    line-height: var(--font-lineheight-1);
+    padding: var(--size-5) 0;
+    color: #fefefe;
+}
+
+p{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-5);
+    line-height: var(--font-lineheight-1);
+    padding: var(--size-4) 0;
+    color: #fefefe;
+}
+
+body {
+    background-color: #0D1C38;
+    max-width: 480px;
+}
+

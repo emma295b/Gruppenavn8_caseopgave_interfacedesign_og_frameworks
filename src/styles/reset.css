@@ -68,17 +68,6 @@ font: inherit;
 }
 
  
-ul:where([role="list"]),
-
-ol:where([role="list"]) {
-
-list-style: none;
-
-padding: 0;
-
-}
-
- 
 p,
 
 h1,
