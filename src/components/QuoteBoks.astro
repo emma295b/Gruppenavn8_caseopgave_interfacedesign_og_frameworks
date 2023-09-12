@@ -1,3 +1,21 @@
 ---
-const { quoteboks } = Astro.props;
+const {variant, text1, text2, text3, img} = Astro.props;
 ---
+
+<quoteBoks class={variant}>
+    <div>
+        <a href="../assets/images/Citationstegn.svg">{img}</a>
+        <h3>{text1}</h3>
+        <h3>{text2}</h3>
+        <h3>{text3}</h3>
+    </div>
+</quoteBoks>
+
+<style>
+    .first{
+        max-width: 400px;
+        display: flex;
+        background-color: #E7C994;
+        padding: 1rem;
+    }
+</style>
