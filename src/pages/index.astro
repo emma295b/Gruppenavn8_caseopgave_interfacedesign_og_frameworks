@@ -9,6 +9,9 @@ import Overskrift from "../components/Overskrift.astro";
 import { Image } from "astro:assets";
 import ReadAloud from "../assets/images/icons/ReadAloud.svg";
 import RødtKamera from "../assets/images/Kamera.svg";
+import Sti from "../assets/images/Sti.svg";
+import Skyer from "../assets/images/Skyer.svg";
+import PaperPlane from "../assets/images/PaperPlane.svg";
 ---
 
 <html lang="en">
@@ -61,6 +64,54 @@ import RødtKamera from "../assets/images/Kamera.svg";
           Så Pierre gav sig selv en udfordring: <span class="highlight">At blive landets bedst sælgende stock-fotograf.</span> Pierre lejede et gammelt, billigt erhvervslokale i Ishøj industri, fik fløjet billige skuespillere ind fra Polen og Baltikum, og fotograferede 10 timer om
           dagen. Pierres profeti om stock-foto branchen holdt stik. Pierre var allerede en af landets bedst sælgende stock-fotografer, før han blev færdig med studiet på DMJX.
         </p>
+      </section>
+
+      <section class="section_3">
+        <Overskrift><h2>En <span class="highlight">Skillevej</span></h2></Overskrift>
+        <div>
+          <Image src={Sti} alt="Sti_1" />
+        </div>
+        <div>
+          <Image src={Sti} alt="Sti_2" />
+        </div>
+
+        <p>
+          Pierre søgte inspiration i analog fotografering, i Lomo-bevægelsen, Glitch art og polaroid fotografering, og begyndte stille og roligt at skabe sig en ny stil - en stil med fokus på det <span class="highlight">uperfekte</span>, og hvor der er et uforudsigeligt element i
+          det at tage billeder.  Pierre tog det endda så vidt at han ikke kun droppede at tage stock-fotos. Han fjernede også alle stock-fotos fra de tjenester, han solgte sine fotos hos. Han gik fra at være en god forretningsdrivende til at blive en vaskeægte boheme-type på
+          rekordtid.
+        </p>
+
+        <div>
+          <QuoteBoks>
+            <h3>Det interessante ligger i fejlen. Et foto <span class="highlight">masse af fejl er interessant.</span> Jeg eksperimenterer med udstyr, teknik og skaber nye visuelle udtryk <span class="highlight">Det uperfekte er perfekt.</span></h3>
+          </QuoteBoks>
+        </div>
+
+        <div>
+          <Image src={Skyer} alt="Skyer" />
+        </div>
+        <div>
+          <Image src={PaperPlane} alt="PaperPlane" />
+        </div>
+      </section>
+
+      <section class="section_4">
+        <Overskrift><h2>En ny<span class="highlight"> Begyndelse</span></h2></Overskrift>
+        <p>
+          Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han har stadig lidt penge på kontoen, og studerer nu kunstfotografering på fotoskolen Fatamorgana. Han glæder sig over hver dags kunstneriske eksperimenter, og er for første gang i sit liv rigtig stolt
+          af sit arbejde.
+        </p>
+
+        <p>
+          Karrieren begynder også så småt også at gå den rette vej: Pierre er begyndt at sælge fotokunst på nettet, og har udgivet sin første foto-bog med titlen “Lidt i fem,” som er en fotografisk odyssé om at slæbe en brandert hjem i de tidlige morgentimer. I forbindelse med
+          udgivelsen af bogen, har han en udstilling på vej i det Kongelige Biblioteks fotoudstilling.
+        </p>
+
+        <div>
+          <QuoteBoks>
+            <h3>Nu kan jeg leve igen. Jeg føler mig frisk. Jeg føler mig fri. <span class="highlight">Jeg føler mig genfødt.</span></h3>
+          </QuoteBoks>
+        </div>
       </section>
     </main>
   </body>
