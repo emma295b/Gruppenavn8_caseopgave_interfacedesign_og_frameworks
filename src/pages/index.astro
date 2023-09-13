@@ -8,46 +8,39 @@ import ScrollBar from "../components/ScrollBar.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Pierre Falcke</title>
-	</head>
-	<body>
-		<main>
-			<section>
-				<Header variant="first"
-				text1="Det uperfekte"
-				text2="Er perfekt"
-				<div><Image src={headerimage} format="svg" alt="header background picture"</div>>
-				>
-				</Header>
-			</section>
-			
-			<div>
-				<QuoteBoks>
-					<h3>Om ganske få år er hele branchen digital, og dem der ikke hopper med på den digitale vogn <span class="highlight">lukker.</span></h3>
-				</QuoteBoks>
-			</div>
-			
-		</main>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Pierre Falcke</title>
+  </head>
+  <body>
+    <main>
+		<div>
+		<Header>
+			<h1>Det uperfekte<span class="highlight">Er perfekt</span></h1>
+		</Header>
+		</div>
+
+      <div>
+        <QuoteBoks>
+          <h3>Om ganske få år er hele branchen digital, og dem der ikke hopper med på den digitale vogn <span class="highlight">lukker.</span></h3>
+        </QuoteBoks>
+      </div>
+    </main>
+  </body>
 </html>
 
 <style>
+  h1 span {
+    font-family: "Courier New", Courier, monospace;
+  }
+  .highlight {
+    color: #E41088;
+  }
 
-h1 span{
-	font-family: 'Courier New', Courier, monospace;
-}
-.highlight{
-	color: rgb(204, 24, 54);
-}
-
-h3 span{
-	font-weight: 700;
-}
-
-
+  h1, h3 span {
+    font-weight: 700;
+  }
 </style>

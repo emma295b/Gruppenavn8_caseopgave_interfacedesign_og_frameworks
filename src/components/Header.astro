@@ -1,11 +1,6 @@
 ---
-const { variant, header, text1, text2, img } = Astro.props;
 ---
 
-<header class={variant}>
-    <div>
-        <h1>{text1}</h1>
-        <h1>{text2}</h1>
-        <a href="../assets/images/BGdesignHeader.svg">{img}</a>
-    </div>
+<header>
+  <slot />
 </header>
