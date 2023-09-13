@@ -1,5 +1,4 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
 import Footer from "../components/Footer.astro";
 import InfoBoks from "../components/InfoBoks.astro";
 import Header from "../components/Header.astro";
@@ -18,6 +17,7 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="global.css" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Pierre Falcke</title>
@@ -27,7 +27,7 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
       <section class="header">
         <div>
           <Header>
-            <h1>Det uperfekte<span class="highlight">Er perfekt</span></h1>
+            <h1>Det uperfekte<span class="highlight"> Er perfekt</span></h1>
           </Header>
         </div>
 
@@ -118,6 +118,13 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
 </html>
 
 <style>
+  body {
+    background-color: #211a32;
+  }
+
+  p {
+    color: #fefefe;
+  }
   h1 span {
     font-family: "Courier New", Courier, monospace;
   }
