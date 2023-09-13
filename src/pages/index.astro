@@ -5,6 +5,8 @@ import InfoBoks from "../components/InfoBoks.astro";
 import Header from "../components/Header.astro";
 import QuoteBoks from "../components/QuoteBoks.astro";
 import ScrollBar from "../components/ScrollBar.astro";
+import { Image } from "astro:assets";
+import ReadAloud from "../assets/images/icons/ReadAloud.svg";
 ---
 
 <html lang="en">
@@ -17,11 +19,15 @@ import ScrollBar from "../components/ScrollBar.astro";
   </head>
   <body>
     <main>
-		<div>
-		<Header>
-			<h1>Det uperfekte<span class="highlight">Er perfekt</span></h1>
-		</Header>
-		</div>
+      <div>
+        <Header>
+          <h1>Det uperfekte<span class="highlight">Er perfekt</span></h1>
+        </Header>
+      </div>
+
+      <div>
+        <Image src={ReadAloud} alt="Read Aloud knap" />
+      </div>
 
       <div>
         <QuoteBoks>
@@ -37,10 +43,11 @@ import ScrollBar from "../components/ScrollBar.astro";
     font-family: "Courier New", Courier, monospace;
   }
   .highlight {
-    color: #E41088;
+    color: #e41088;
   }
 
-  h1, h3 span {
+  h1,
+  h3 span {
     font-weight: 700;
   }
 </style>
