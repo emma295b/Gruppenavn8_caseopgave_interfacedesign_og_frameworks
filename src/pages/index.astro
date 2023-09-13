@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
 import InfoBoks from "../components/InfoBoks.astro";
+import Header from "../components/Header.astro";
 import QuoteBoks from "../components/QuoteBoks.astro";
 import ScrollBar from "../components/ScrollBar.astro";
+import { Image } from 'astro:assets';
+import headerimage from "../assets/images/BGdesignHeader.svg";
 ---
 
 <html lang="en">
@@ -17,6 +19,15 @@ import ScrollBar from "../components/ScrollBar.astro";
 	</head>
 	<body>
 		<main>
+			<section>
+				<Header variant="first"
+				text1="Det uperfekte"
+				text2="Er perfekt"
+				<div><Image src={headerimage} format="svg" alt="header background picture"</div>>
+				>
+				</Header>
+			</section>
+			
 			<div>
 				<QuoteBoks variant="first"
 						text1="Om ganske få år er hele branchen digital,"
@@ -26,6 +37,7 @@ import ScrollBar from "../components/ScrollBar.astro";
 				>
 				</QuoteBoks>
 			</div>
+			
 		</main>
 	</body>
 </html>
