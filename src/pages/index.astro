@@ -5,6 +5,7 @@ import InfoBoks from "../components/InfoBoks.astro";
 import Header from "../components/Header.astro";
 import QuoteBoks from "../components/QuoteBoks.astro";
 import ScrollBar from "../components/ScrollBar.astro";
+import Overskrift from "../components/Overskrift.astro";
 import { Image } from "astro:assets";
 import ReadAloud from "../assets/images/icons/ReadAloud.svg";
 ---
@@ -32,8 +33,10 @@ import ReadAloud from "../assets/images/icons/ReadAloud.svg";
       </section>
 
       <section class="pierre_falcke">
-		
-	  </section>
+        <Overskrift>
+          <h2>1. Pierre Falcke <span class="highlight">Intro</span></h2>
+        </Overskrift>
+	    </section>
 
       <div>
         <QuoteBoks>
