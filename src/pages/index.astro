@@ -95,18 +95,31 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
 
           <InfoBoks>
             <h3 class="faktacenter">Hvad er analog kamera?</h3>
-              <img src="src/assets/images/icons/Camera.svg" alt="kamera icon" />
+               <div class="FlexInfoboks">
+            <img src="src/assets/images/icons/Camera.svg" alt="kamera icon" />
               <p class="sorttekst"><span class="fat">Fotograf med</span> Gammeldags filmrulle.</p>
-              <img src="src/assets/images/icons/Fremdrift.svg" alt="Fremdrift pil icon" />
-              <p class="sorttekst"><span class="fat">Stigende popularitet</span> Især hos de yngre.</p>
-              <img src="src/assets/images/icons/Spirit.svg" alt="Spirit icon" />
+              </div>
+                <div class="FlexInfoboks">
+              <img src="src/assets/images/icons/Fremdrift.svg" alt="Fremdrift pil icon" /> 
+             <p class="sorttekst"><span class="fat">Stigende popularitet</span> Især hos de yngre.</p>
+              </div>
+                <div class="FlexInfoboks">
+             <img src="src/assets/images/icons/Spirit.svg" alt="Spirit icon" />
               <p class="sorttekst"><span class="fat">Mange mennesker mener at</span>Analog kamera har mere 'sjæl'.</p>
+              </div>
+               <div class="FlexInfoboks">
               <img src="src/assets/images/icons/UperfektDesign.svg" alt="Uperfekt icon" />
               <p class="sorttekst"><span class="fat">Giver mulighed for at</span>Eksperimenterer med <span class="highlight">det uperfekte</span>og uforudsigelige i processen.</p>
+           </div>
             </div>
           </InfoBoks>
+          <div class="sky">
             <Image src={Skyer} alt="Skyer" />
+             </div>
+             <div class="fly">
             <Image src={PaperPlane} alt="PaperPlane" />
+            </div>
+           
         </section>
 
         <section class="section_4">
@@ -217,7 +230,17 @@ padding-inline: 0.5rem;
   text-align: center;
   margin-top: -8.8rem;
 }
+
+.sky {
+  margin-top: -5.5rem;
+}
+
+.fly {
+  margin-top: -4rem;
+  margin-left: 4rem; 
+}
   }
+
 
 
 </style>
