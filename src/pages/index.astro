@@ -1,11 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Footer from "../components/Footer.astro";
-import InfoBoks from "../components/InfoBoks.astro";
-import Header from "../components/Header.astro";
-import QuoteBoks from "../components/QuoteBoks.astro";
 import ScrollBar from "../components/ScrollBar.astro";
+import Header from "../components/Header.astro";
 import Overskrift from "../components/Overskrift.astro";
+import InfoBoks from "../components/InfoBoks.astro";
+import QuoteBoks from "../components/QuoteBoks.astro";
+import Footer from "../components/Footer.astro";
 import { Image } from "astro:assets";
 import ReadAloud from "../assets/images/icons/ReadAloud.svg";
 import RødtKamera from "../assets/images/Kamera.svg";
@@ -23,25 +23,24 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
     <meta name="generator" content={Astro.generator} />
     <title>Pierre Falcke</title>
   </head>
+
     <BaseLayout title="forside">
     <main>
       <section class="header">
-        <div>
           <Header>
             <h1>Det uperfekte<span class="highlight"> Er perfekt</span></h1>
           </Header>
-        </div>
-
-        <Image class="ReadALoudKnap" src={ReadAloud} alt="Read Aloud knap" />
+          <Image class="ReadALoudKnap" src={ReadAloud} alt="Read Aloud knap" />
       </section>
 
       <section class="section_1">
         <Overskrift><h2>Pierre Falcke <span class="highlight">Intro</span></h2></Overskrift>
+        
         <div class="StrongText">Pierre Falcke.</div><p>
           Du ved formentligt ikke hvem han er. Men indtil for kort tid siden, så du hans værker et par gange om dagen, hver dag, året rundt. Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og han solgte over 2 millioner fotos om året. Men Pierre kunne ikke drømme
           om at bruge sine egne fotos. <div class="StrongText">Faktisk...</div>
           <p>Kan han slet <span class="redHightlight">ikke fordrage</span> sit eget arbejde.</p>
-
+          
           <img src="src/assets/images/Glass.svg" alt="glasskår" />
 
           <InfoBoks>
@@ -163,9 +162,6 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
 </html>
 
 <style>
-  body {
-    background-color: #211a32;
-  }
 
   p {
     color: #fefefe;
