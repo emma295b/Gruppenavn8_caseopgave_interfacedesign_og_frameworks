@@ -11,7 +11,8 @@ import Skyer from "../assets/images/Skyer.svg";
 import PaperPlane from "../assets/images/PaperPlane.svg";
 import StockFoto1 from "../assets/images/Stock-foto-1.svg";
 import StockFoto2 from "../assets/images/Stock-foto-2.svg";
-import StiBillede from "../assets/images/StiBillede.svg";
+import StiBillede1 from "../assets/images/Sti-Billede-1.svg";
+import StiBillede2 from "../assets/images/Sti-Billede-2.svg";
 ---
 
 <html lang="en">
@@ -42,12 +43,12 @@ import StiBillede from "../assets/images/StiBillede.svg";
           om at bruge sine egne fotos. <div class="StrongText">Faktisk...</div>
         </p>
         <p>Kan han slet <span class="redHightlight">ikke fordrage</span> sit eget arbejde.</p>
-        
+
         <div class="stockflex">
           <Image src={StockFoto1} alt="Stock" />
           <Image class="lastchild" src={StockFoto2} alt="Stock" />
         </div>
-        
+
         <InfoBoks>
           <h3 class="faktacenter">Fakta om Pierre</h3>
           <div class="FlexInfoboks">
@@ -87,8 +88,12 @@ import StiBillede from "../assets/images/StiBillede.svg";
         <section class="section_3">
           <Overskrift><h2 class="overskrift">En <span class="highlight">Skillevej</span></h2></Overskrift>
 
-          <Image class="sti" src={Sti} alt="Sti_1" />
-          <Image src={StiBillede} alt="Eksperimenterende billeder" />
+          <Image class="sti" src={Sti} alt="sti" />
+
+          <div class="stiflex">
+            <Image class="sti" src={StiBillede1} alt="Eksperimenterende billeder" />
+            <Image class="lastchildsti" src={StiBillede2} alt="Eksperimenterende billeder" />
+          </div>
 
           <p>
             Pierre tjente godt det følgende årti. Men stille og roligt begyndte billederne også at give ham kvalme. Han kunne ikke holde sit eget arbejde ud. Han måtte finde et modsvar til alle de blankpolerede fotos. Noget han kunne lave med stolthed. Pierre besluttede sig for
@@ -263,6 +268,18 @@ import StiBillede from "../assets/images/StiBillede.svg";
 
       .lastchild {
         margin-top: -7.5rem;
+      }
+
+      .stiflex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -23rem;
+      }
+
+      .lastchildsti {
+        margin-top: -20rem;
+        margin-bottom: -6rem;
       }
     }
   </style>
