@@ -44,7 +44,7 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
           
           <img class="ImgFit" src="src/assets/images/Glass.svg" alt="glasskår" />
 
-          <InfoBoks class="flexoutcenter">
+          <InfoBoks class="center">
             <h3 class="faktacenter">Fakta om Pierre</h3>
             <div class="FlexInfoboks">
               <img src="src/assets/images/icons/Camera.svg" alt="kamera" />
@@ -96,7 +96,7 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
             </QuoteBoks>
 
             
-          <InfoBoks class="flexoutcenter">
+          <InfoBoks class="center">
             <h3 class="faktacenter">Hvad er analog kamera?</h3>     
             <div class= "FlexInfoboks">
               <img src="src/assets/images/icons/Camera.svg" alt="kamera icon" />
@@ -118,10 +118,10 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
           </InfoBoks>
  
 
-          <div class="sky">
+          <div class="center, sky">
             <Image src={Skyer} alt="Skyer" />
              </div>
-             <div class="fly">
+             <div class="center, fly">
             <Image src={PaperPlane} alt="PaperPlane" />
             </div>
            
@@ -133,17 +133,16 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
             Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han har stadig lidt penge på kontoen, og studerer nu kunstfotografering på fotoskolen Fatamorgana. Han glæder sig over hver dags kunstneriske eksperimenter, og er for første gang i sit liv rigtig
             stolt af sit arbejde.
           </p>
-
-          <video controls width="250">
-            <source src="/src/video/eksperimentel-video.mp4" type="video/mp4" /></video>
             <p>
               Karrieren begynder også så småt også at gå den rette vej: Pierre er begyndt at sælge fotokunst på nettet, og har udgivet sin første foto-bog med titlen “Lidt i fem,” som er en fotografisk odyssé om at slæbe en brandert hjem i de tidlige morgentimer. I forbindelse
               med udgivelsen af bogen, har han en udstilling på vej i det Kongelige Biblioteks fotoudstilling.
             </p>
-              <QuoteBoks class="centerquote">
+    
+              <QuoteBoks>
                <h3>Nu kan jeg leve igen. Jeg føler mig frisk. Jeg føler mig fri. <span class="highlight">Jeg føler mig genfødt.</span>
                 </h3>
               </QuoteBoks>
+
         </section>
       </section>
     </main>
@@ -157,8 +156,12 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
   }
 
   .center{
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
 }
+
+
   h1 span {
     font-family: "Courier New", Courier, monospace;
   }
@@ -189,11 +192,6 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
     color: #2d2d2d;
    padding-block: 1rem;
   }
-
-  .flexoutcenter {
-    display: flex;
-    margin-left: 1.01rem;
-  }
   .highlight {
     color: #e41088;
   }
@@ -203,7 +201,7 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
   }
   .readaloud {
     margin-left: 10rem;
-    margin-top: 33rem;
+    margin-top: 31rem;
   }
 
   .StrongText {
@@ -242,8 +240,8 @@ padding-inline: 0.5rem;
 }
 
 .fly {
-  margin-top: -4rem;
-  margin-left: 4rem; 
+  margin-top: -6rem;
+ margin-left: 1rem;
 }
 
  .header{
