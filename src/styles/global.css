@@ -6,12 +6,8 @@ main {
 body {
   max-width: 36em;
   margin: 0 auto;
-<<<<<<< HEAD
-  background-color: #0D1C38;
-=======
-  background-color: #211a32;
+  background-color: #0d1c38;
   font-family: "manrope", sans-serif;
->>>>>>> 214c29bd38130d86f6b49778c3d72907f17f79c4
 }
 
 @font-face {
@@ -24,7 +20,6 @@ body {
   src: url("public/fonts/rubikglitch-regular-webfont.woff2") format("woff");
 }
 
-
 h1 {
   font-size: 35px;
   margin: auto;
@@ -33,7 +28,6 @@ h1 {
   flex-direction: column;
   padding-top: 3rem;
   padding-left: 1rem;
-
 }
 
 h2 {
