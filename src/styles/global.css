@@ -19,20 +19,24 @@ p {
 h1 {
   font-size: 35px;
   margin: auto;
-  padding: auto;
   color: #fefefe;
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
   font-size: 30px;
   margin: auto;
-  padding: auto;
   color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
   font-size: 25px;
   color: #fefefe;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
