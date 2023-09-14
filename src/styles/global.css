@@ -3,6 +3,11 @@ main {
   padding: var(--size-3);
 }
 
+body {
+  max-width: 36em;
+  margin: 0 auto;
+}
+
 /*Typografi */
 h1,
 h2,
