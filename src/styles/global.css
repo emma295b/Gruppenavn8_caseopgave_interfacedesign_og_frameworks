@@ -12,12 +12,12 @@ body {
 
 @font-face {
   font-family: "manrope";
-  src: url("manrope-variablefont_wght-webfont.woff2") format("woff2");
+  src: url("public/fonts/manrope-variablefont_wght-webfont.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "glitch";
-  src: url("rubikglitch-regular-webfont.woff2") format("woff");
+  src: url("public/fonts/rubikglitch-regular-webfont.woff2") format("woff");
 }
 
 
