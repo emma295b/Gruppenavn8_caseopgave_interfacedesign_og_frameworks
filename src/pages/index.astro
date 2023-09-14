@@ -1,13 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ScrollBar from "../components/ScrollBar.astro";
 import Header from "../components/Header.astro";
 import Overskrift from "../components/Overskrift.astro";
 import InfoBoks from "../components/InfoBoks.astro";
 import QuoteBoks from "../components/QuoteBoks.astro";
-import Footer from "../components/Footer.astro";
 import { Image } from "astro:assets";
-import ReadAloud from "../assets/images/icons/ReadAloud.svg";
 import RødtKamera from "../assets/images/Kamera.svg";
 import Sti from "../assets/images/Sti.svg";
 import Skyer from "../assets/images/Skyer.svg";
@@ -23,43 +20,41 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
     <meta name="generator" content={Astro.generator} />
     <title>Pierre Falcke</title>
   </head>
-     
-   
-    <BaseLayout title="forside">
-    <main> 
+
+  <BaseLayout title="forside">
+    <main>
       <section class="header">
-          <Header>
-            <h1>Det uperfekte<span class="highlight glitch"> Er perfekt</span></h1>
-          </Header>
-          <img class="readaloud" src="src/assets/images/icons/ReadAloud.svg" alt="Read Aloud Knap">
+        <Header>
+          <h1>Det uperfekte<span class="highlight glitch"> Er perfekt</span></h1>
+        </Header>
+        <img class="readaloud" src="src/assets/images/icons/ReadAloud.svg" alt="Read Aloud Knap" />
       </section>
 
       <section class="section_1">
         <Overskrift><h2 class="overskrift">Pierre Falcke <span class="highlight">Intro</span></h2></Overskrift>
-        
+
         <div class="StrongText">Pierre Falcke.</div>
-        <p> Du ved formentligt ikke hvem han er. Men indtil for kort tid siden, så du hans værker et par gange om dagen, hver dag, året rundt. Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og han solgte over 2 millioner fotos om året. Men Pierre kunne ikke drømme
-          om at bruge sine egne fotos. <div class="StrongText">Faktisk...</div></p>
-          <p>Kan han slet <span class="redHightlight">ikke fordrage</span> sit eget arbejde.</p>
-          
-          <img class="ImgFit" src="src/assets/images/Glass.svg" alt="glasskår" />
-          <InfoBoks>
-            <h3 class="faktacenter">Fakta om Pierre</h3>
-            <div class="FlexInfoboks">
-              <img src="src/assets/images/icons/Camera.svg" alt="kamera" />
-              <p class="sorttekst"><span class="fat">Fotograf fra</span> 10 års alderen.</p>
-            </div>
-            <div class="FlexInfoboks">
-              <img src="src/assets/images/icons/DMJX.svg" alt="DMJX logo" />
-              <p class="sorttekst"><span class="fat">Fotografisk Journalistik</span> DMJX år 2000.</p>
-            </div>
-            <div class="FlexInfoboks">
-              <img src="src/assets/images/icons/Rosette.svg" alt="Rosette" />
-              <p class="sorttekst"><span class="fat">Verdens bedste</span> stock-fotograf før endt uddannelse.</p>
-            </div>
-          </InfoBoks>
-      
-        <img class="ImgFit" src="src/assets/images/Glass.svg" alt="glasskår" />
+        <p>
+          Du ved formentligt ikke hvem han er. Men indtil for kort tid siden, så du hans værker et par gange om dagen, hver dag, året rundt. Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og han solgte over 2 millioner fotos om året. Men Pierre kunne ikke drømme
+          om at bruge sine egne fotos. <div class="StrongText">Faktisk...</div>
+        </p>
+        <p>Kan han slet <span class="redHightlight">ikke fordrage</span> sit eget arbejde.</p>
+    
+        <InfoBoks>
+          <h3 class="faktacenter">Fakta om Pierre</h3>
+          <div class="FlexInfoboks">
+            <img src="src/assets/images/icons/Camera.svg" alt="kamera" />
+            <p class="sorttekst"><span class="fat">Fotograf fra</span> 10 års alderen.</p>
+          </div>
+          <div class="FlexInfoboks">
+            <img src="src/assets/images/icons/DMJX.svg" alt="DMJX logo" />
+            <p class="sorttekst"><span class="fat">Fotografisk Journalistik</span> DMJX år 2000.</p>
+          </div>
+          <div class="FlexInfoboks">
+            <img src="src/assets/images/icons/Rosette.svg" alt="Rosette" />
+            <p class="sorttekst"><span class="fat">Verdens bedste</span> stock-fotograf før endt uddannelse.</p>
+          </div>
+        </InfoBoks>
 
         <section class="section_2">
           <Overskrift><h2 class="overskrift lang">Pierre Falckes <span class="highlight">Berømmelse</span></h2></Overskrift>
@@ -67,14 +62,14 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
             Pierres interesse for foto startede som ganske ung - som 10-årig fik han sin fars gamle Rollei-kamera, og begyndte at skyde løs. Det var før den digitale revolution, så alle Pierres lommepenge blev brugt på filmruller og fremkaldelse af film. Pierre fortsatte med at
             fotografere på film op gennem gymnasietiden.
           </p>
-            <Image class="center" src={RødtKamera} alt="Rødt kamera SVG" />
+          <Image class="center" src={RødtKamera} alt="Rødt kamera SVG" />
           <p>
             Pierre gik over til digital fotografering i starten af 2000’erne, da han begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en ny verden sig: Reklamefotografering i studie, lyssætning og manipulering af billeder i Photoshop blev hans nye stil.  På det
             tidspunkt var stock-foto industrien i starten af en revolution: De første online stock-foto websites begyndte at komme på markedet, men de store, etablerede spillere på markedet holdt lidt igen. Pierre så det for sig:
           </p>
-            <QuoteBoks>
-              <h3>Om ganske få år er hele branchen digital, og dem der ikke hopper med på den digitale vogn <span class="highlight">lukker.</span></h3>
-            </QuoteBoks>
+          <QuoteBoks>
+            <h3>Om ganske få år er hele branchen digital, og dem der ikke hopper med på den digitale vogn <span class="highlight">lukker.</span></h3>
+          </QuoteBoks>
           <p>
             Så Pierre gav sig selv en udfordring: <span class="highlight">At blive landets bedst sælgende stock-fotograf.</span> Pierre lejede et gammelt, billigt erhvervslokale i Ishøj industri, fik fløjet billige skuespillere ind fra Polen og Baltikum, og fotograferede 10 timer
             om dagen. Pierres profeti om stock-foto branchen holdt stik. Pierre var allerede en af landets bedst sælgende stock-fotografer, før han blev færdig med studiet på DMJX.
@@ -83,181 +78,174 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
 
         <section class="section_3">
           <Overskrift><h2 class="overskrift">En <span class="highlight">Skillevej</span></h2></Overskrift>
-            <Image class="sti" src={Sti} alt="Sti_1" />
-          <p>Pierre tjente godt det følgende årti. Men stille og roligt begyndte billederne også at give ham kvalme. Han kunne ikke holde sit eget arbejde ud. Han måtte finde et modsvar til alle de blankpolerede fotos. Noget han kunne lave med stolthed. Pierre besluttede sig for at droppe stock-fotos, og vende tilbage til rødderne.</p>
+
+          <Image class="sti" src={Sti} alt="Sti_1" />
+
+          <p>
+            Pierre tjente godt det følgende årti. Men stille og roligt begyndte billederne også at give ham kvalme. Han kunne ikke holde sit eget arbejde ud. Han måtte finde et modsvar til alle de blankpolerede fotos. Noget han kunne lave med stolthed. Pierre besluttede sig for
+            at droppe stock-fotos, og vende tilbage til rødderne.
+          </p>
+
           <p>
             Pierre søgte inspiration i analog fotografering, i Lomo-bevægelsen, Glitch art og polaroid fotografering, og begyndte stille og roligt at skabe sig en ny stil - en stil med fokus på det <span class="highlight">uperfekte</span>, og hvor der er et uforudsigeligt element
             i det at tage billeder. Pierre tog det endda så vidt at han ikke kun droppede at tage stock-fotos. Han fjernede også alle stock-fotos fra de tjenester, han solgte sine fotos hos. Han gik fra at være en god forretningsdrivende til at blive en vaskeægte boheme-type på
             rekordtid.
           </p>
-            <QuoteBoks>
-              <h3>Det interessante ligger i fejlen. Et foto <span class="highlight">masse af fejl er interessant.</span> Jeg eksperimenterer med udstyr, teknik og skaber nye visuelle udtryk <span class="highlight">Det uperfekte er perfekt.</span></h3>
-            </QuoteBoks>
 
-            
+          <QuoteBoks>
+            <h3>Det interessante ligger i fejlen. Et foto <span class="highlight">masse af fejl er interessant.</span> Jeg eksperimenterer med udstyr, teknik og skaber nye visuelle udtryk <span class="highlight">Det uperfekte er perfekt.</span></h3>
+          </QuoteBoks>
+
           <InfoBoks>
-            <h3 class="faktacenter">Hvad er analog kamera?</h3>     
-            <div class= "FlexInfoboks">
+            <h3 class="faktacenter">Hvad er analog kamera?</h3>
+            <div class="FlexInfoboks">
               <img src="src/assets/images/icons/Camera.svg" alt="kamera icon" />
               <p class="sorttekst"><span class="fat">Fotograf med</span> Gammeldags filmrulle.</p>
             </div>
             <div class="FlexInfoboks">
-              <img src="src/assets/images/icons/Fremdrift.svg" alt="Fremdrift pil icon" />  
+              <img src="src/assets/images/icons/Fremdrift.svg" alt="Fremdrift pil icon" />
               <p class="sorttekst"><span class="fat">Stigende popularitet</span> Især hos de yngre.</p>
-            </div>        
+            </div>
             <div class="FlexInfoboks">
               <img src="src/assets/images/icons/Spirit.svg" alt="Spirit icon" />
               <p class="sorttekst"><span class="fat">Mange mennesker mener at</span>Analog kamera har mere 'sjæl'.</p>
             </div>
-            <div class="FlexInfoboks">    
-              <img src="src/assets/images/icons/UperfektDesign.svg" alt="Uperfekt icon" />  
+            <div class="FlexInfoboks">
+              <img src="src/assets/images/icons/UperfektDesign.svg" alt="Uperfekt icon" />
               <p class="sorttekst"><span class="fat">Giver mulighed for at</span>Eksperimenterer med <span class="highlight">det uperfekte</span>og uforudsigelige i processen.</p>
-           </div>
             </div>
           </InfoBoks>
- 
-
-          <div class="center, sky">
-            <Image src={Skyer} alt="Skyer" />
-             </div>
-             <div class="center, fly">
-            <Image src={PaperPlane} alt="PaperPlane" />
-            </div>
-           
         </section>
 
-        <section class="section_4">
-          <Overskrift><h2 class="overskrift">En ny<span class="highlight"> Begyndelse</span></h2></Overskrift>
-          <p>
-            Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han har stadig lidt penge på kontoen, og studerer nu kunstfotografering på fotoskolen Fatamorgana. Han glæder sig over hver dags kunstneriske eksperimenter, og er for første gang i sit liv rigtig
-            stolt af sit arbejde.
-          </p>
-            <p>
-              Karrieren begynder også så småt også at gå den rette vej: Pierre er begyndt at sælge fotokunst på nettet, og har udgivet sin første foto-bog med titlen “Lidt i fem,” som er en fotografisk odyssé om at slæbe en brandert hjem i de tidlige morgentimer. I forbindelse
-              med udgivelsen af bogen, har han en udstilling på vej i det Kongelige Biblioteks fotoudstilling.
-            </p>
-    
-              <QuoteBoks>
-               <h3>Nu kan jeg leve igen. Jeg føler mig frisk. Jeg føler mig fri. <span class="highlight">Jeg føler mig genfødt.</span>
-                </h3>
-              </QuoteBoks>
+        <div class="center, sky">
+          <Image src={Skyer} alt="Skyer" />
+        </div>
+        <div class="center, fly">
+          <Image src={PaperPlane} alt="PaperPlane" />
+        </div>
+      </section>
 
-        </section>
+      <section class="section_4">
+        <Overskrift><h2 class="overskrift">En ny<span class="highlight"> Begyndelse</span></h2></Overskrift>
+        <p>
+          Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han har stadig lidt penge på kontoen, og studerer nu kunstfotografering på fotoskolen Fatamorgana. Han glæder sig over hver dags kunstneriske eksperimenter, og er for første gang i sit liv rigtig stolt
+          af sit arbejde.
+        </p>
+        <p>
+          Karrieren begynder også så småt også at gå den rette vej: Pierre er begyndt at sælge fotokunst på nettet, og har udgivet sin første foto-bog med titlen “Lidt i fem,” som er en fotografisk odyssé om at slæbe en brandert hjem i de tidlige morgentimer. I forbindelse med
+          udgivelsen af bogen, har han en udstilling på vej i det Kongelige Biblioteks fotoudstilling.
+        </p>
+
+        <QuoteBoks>
+          <h3>Nu kan jeg leve igen. Jeg føler mig frisk. Jeg føler mig fri. <span class="highlight">Jeg føler mig genfødt.</span></h3>
+        </QuoteBoks>
       </section>
     </main>
-    </BaseLayout>
-</html>
+  </BaseLayout>
 
-<style>
-@media (max-width: 480px){
-  .sorttekst{
-    color: #2d2d2d;
-  }
+  <style>
+    @media (max-width: 480px) {
+      .sorttekst {
+        color: #2d2d2d;
+      }
 
-   h1 span {
-    font-family: "Courier New", Courier, monospace;
-  }
-  h1,
-  h3 span {
-    font-weight: 500;
-  }
+      h1 span {
+        font-family: "Courier New", Courier, monospace;
+      }
+      h1,
+      h3 span {
+        font-weight: 500;
+      }
 
- .overskrift{
-  display: flex;
-  flex-direction: column;
-    position: relative;
-    text-align: left;
-    bottom: 8rem;
-    left: 1rem;
+      .overskrift {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: left;
+        bottom: 8rem;
+        left: 1rem;
+      }
+
+      .lang {
+        position: relative;
+        text-align: left;
+      }
+
+      .faktacenter {
+        display: flex;
+        text-align: center;
+        color: #2d2d2d;
+        padding-block: 2rem;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .highlight {
+        color: #e41088;
+      }
+
+      .fat {
+        font-weight: 800;
+      }
+      .readaloud {
+        margin-left: 12rem;
+        margin-top: 30rem;
+      }
+
+      .StrongText {
+        font-size: 25px;
+        font-weight: 800;
+        color: #fefefe;
+      }
+
+      .redHightlight {
+        color: #d10303;
+      }
     
- }
+      .FlexInfoboks {
+        display: flex;
+        flex-direction: row;
+        padding-inline: 0.5rem;
+      }
 
- .lang{
-    position: relative;
-    text-align: left;
-   
- }
+      .FlexInfoboks p,
+      img {
+        padding-inline: 0.5rem;
+      }
 
-  .faktacenter {
-    display: flex;
-    text-align: center;
-    color: #2d2d2d;
-   padding-block: 2rem;
-  }
+      .sti {
+        margin-top: -16rem;
+        margin-bottom: -4rem;
+      }
+      .sky {
+        margin-top: -5.5rem;
+      }
 
-   .center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
-}
-  .highlight {
-    color: #e41088;
-  }
+      .fly {
+        margin-top: -6rem;
+        margin-left: 1rem;
+      }
 
-  .fat {
-    font-weight: 800;
-  }
-  .readaloud {
-    margin-left: 10rem;
-    margin-top: 31rem;
-  }
+      .header {
+        background-image: url("../assets/images/BGimage.svg");
+        height: 700px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100vw;
+        left: calc(-50vw + 50%);
+        margin-top: -1rem;
+        margin-bottom: 1.5rem;
+      }
 
-  .StrongText {
-    font-size: 25px;
-    font-weight: 800;
-    color: #fefefe;
-  }
-
-  .redHightlight {
-    color: #d10303;
-  }
-  .ImgFit {
-    height: 100%;
-    width: 100%;
-    padding-block: 1rem;
-  }
-
-.FlexInfoboks {
-  display: flex;
-  flex-direction: row;
-  padding-inline: 0.5rem;
-}
-
-.FlexInfoboks p, img {
-padding-inline: 0.5rem;
-}
-
-.sti {
-  position: relative;
-  text-align: center;
-  margin-top: -8.8rem;
-}
-
-.sky {
-  margin-top: -5.5rem;
-}
-
-.fly {
-  margin-top: -6rem;
- margin-left: 1rem;
-}
-
- .header{
-  background-image:url("../assets/images/BGimage.svg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.glitch{
-  font-family: "glitch", sans-serif;
-  font-size: 50px;
-}
-  }
-
-
-
-</style>
-
+      .glitch {
+        font-family: "glitch", sans-serif;
+        font-size: 50px;
+      }
+    }
+  </style>
+</html>
