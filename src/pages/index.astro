@@ -43,8 +43,7 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
           <p>Kan han slet <span class="redHightlight">ikke fordrage</span> sit eget arbejde.</p>
           
           <img class="ImgFit" src="src/assets/images/Glass.svg" alt="glasskår" />
-
-          <InfoBoks class="center">
+          <InfoBoks>
             <h3 class="faktacenter">Fakta om Pierre</h3>
             <div class="FlexInfoboks">
               <img src="src/assets/images/icons/Camera.svg" alt="kamera" />
@@ -73,7 +72,7 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
             Pierre gik over til digital fotografering i starten af 2000’erne, da han begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en ny verden sig: Reklamefotografering i studie, lyssætning og manipulering af billeder i Photoshop blev hans nye stil.  På det
             tidspunkt var stock-foto industrien i starten af en revolution: De første online stock-foto websites begyndte at komme på markedet, men de store, etablerede spillere på markedet holdt lidt igen. Pierre så det for sig:
           </p>
-            <QuoteBoks class="centerquote">
+            <QuoteBoks>
               <h3>Om ganske få år er hele branchen digital, og dem der ikke hopper med på den digitale vogn <span class="highlight">lukker.</span></h3>
             </QuoteBoks>
           <p>
@@ -91,12 +90,12 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
             i det at tage billeder. Pierre tog det endda så vidt at han ikke kun droppede at tage stock-fotos. Han fjernede også alle stock-fotos fra de tjenester, han solgte sine fotos hos. Han gik fra at være en god forretningsdrivende til at blive en vaskeægte boheme-type på
             rekordtid.
           </p>
-            <QuoteBoks class="centerquote">
+            <QuoteBoks>
               <h3>Det interessante ligger i fejlen. Et foto <span class="highlight">masse af fejl er interessant.</span> Jeg eksperimenterer med udstyr, teknik og skaber nye visuelle udtryk <span class="highlight">Det uperfekte er perfekt.</span></h3>
             </QuoteBoks>
 
             
-          <InfoBoks class="center">
+          <InfoBoks>
             <h3 class="faktacenter">Hvad er analog kamera?</h3>     
             <div class= "FlexInfoboks">
               <img src="src/assets/images/icons/Camera.svg" alt="kamera icon" />
@@ -155,14 +154,7 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
     color: #2d2d2d;
   }
 
-  .center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
-}
-
-
-  h1 span {
+   h1 span {
     font-family: "Courier New", Courier, monospace;
   }
   h1,
@@ -190,8 +182,14 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
     display: flex;
     text-align: center;
     color: #2d2d2d;
-   padding-block: 1rem;
+   padding-block: 2rem;
   }
+
+   .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
   .highlight {
     color: #e41088;
   }
