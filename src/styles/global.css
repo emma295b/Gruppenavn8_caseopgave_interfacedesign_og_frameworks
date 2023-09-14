@@ -7,15 +7,20 @@ body {
   max-width: 36em;
   margin: 0 auto;
   background-color: #211a32;
+  font-family: "manrope", sans-serif;
 }
 
-/*Typografi */
-h1,
-h2,
-h3,
-p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+@font-face {
+  font-family: "manrope";
+  src: url("manrope-variablefont_wght-webfont.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "glitch";
+  src: url("rubikglitch-regular-webfont.woff2") format("woff");
+}
+
+
 h1 {
   font-size: 35px;
   margin: auto;
