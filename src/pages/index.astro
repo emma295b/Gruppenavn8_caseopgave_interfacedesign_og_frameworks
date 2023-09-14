@@ -9,6 +9,7 @@ import RødtKamera from "../assets/images/Kamera.svg";
 import Sti from "../assets/images/Sti.svg";
 import Skyer from "../assets/images/Skyer.svg";
 import PaperPlane from "../assets/images/PaperPlane.svg";
+import Stock from "../assets/images/Stock.svg";
 ---
 
 <html lang="en">
@@ -39,7 +40,9 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
           om at bruge sine egne fotos. <div class="StrongText">Faktisk...</div>
         </p>
         <p>Kan han slet <span class="redHightlight">ikke fordrage</span> sit eget arbejde.</p>
-    
+
+        <Image class="imgfit" src={Stock} alt="Stock" />
+
         <InfoBoks>
           <h3 class="faktacenter">Fakta om Pierre</h3>
           <div class="FlexInfoboks">
@@ -204,7 +207,7 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
       .redHightlight {
         color: #d10303;
       }
-    
+
       .FlexInfoboks {
         display: flex;
         flex-direction: row;
@@ -245,6 +248,17 @@ import PaperPlane from "../assets/images/PaperPlane.svg";
       .glitch {
         font-family: "glitch", sans-serif;
         font-size: 50px;
+      }
+
+      .imgfit {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100vw;
+        left: calc(-50vw + 50%);
+        margin-top: -1rem;
+        margin-bottom: 1.5rem;
       }
     }
   </style>
