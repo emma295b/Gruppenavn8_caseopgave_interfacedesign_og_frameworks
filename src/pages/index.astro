@@ -42,10 +42,12 @@ import StiBillede from "../assets/images/StiBillede.svg";
           om at bruge sine egne fotos. <div class="StrongText">Faktisk...</div>
         </p>
         <p>Kan han slet <span class="redHightlight">ikke fordrage</span> sit eget arbejde.</p>
-
-        <Image class="imgfit" src={StockFoto1} alt="Stock" />
-        <Image class="imgfit" src={StockFoto2} alt="Stock" />
-
+        
+        <div class="stockflex">
+          <Image src={StockFoto1} alt="Stock" />
+          <Image class="lastchild" src={StockFoto2} alt="Stock" />
+        </div>
+        
         <InfoBoks>
           <h3 class="faktacenter">Fakta om Pierre</h3>
           <div class="FlexInfoboks">
@@ -253,10 +255,14 @@ import StiBillede from "../assets/images/StiBillede.svg";
         font-family: "glitch", sans-serif;
         font-size: 50px;
       }
+      .stockflex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-      .imgfit {
-        position: relative;
-        width: 100vw;
+      .lastchild {
+        margin-top: -7.5rem;
       }
     }
   </style>
